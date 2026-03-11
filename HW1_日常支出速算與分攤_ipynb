@@ -41,7 +41,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 1,
+      "execution_count": 15,
       "metadata": {
         "id": "hnSEAvySXVws"
       },
@@ -68,7 +68,7 @@
       "metadata": {
         "id": "Tvo0Dy2eYRZ6"
       },
-      "execution_count": 2,
+      "execution_count": 16,
       "outputs": []
     },
     {
@@ -84,24 +84,23 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 53
+          "height": 81
         },
         "id": "NGX38KL6YjTo",
-        "outputId": "d8298f15-5430-4505-c87a-c24e19b6ea47"
+        "outputId": "7f16501e-f332-4dec-b1e8-f0ef5c9c99d2"
       },
-      "execution_count": 3,
+      "execution_count": 17,
       "outputs": [
         {
           "output_type": "execute_result",
           "data": {
             "text/plain": [
-              "Empty DataFrame\n",
-              "Columns: [日期, 時間, 分類, 品項, 金額, 付款人, 地點, 支付方式, 備註]\n",
-              "Index: []"
+              "           日期     時間  分類  品項  金額 付款人 地點 支付方式 備註    \n",
+              "0  2026-03-11  13:51  午餐  乾麵  80   承             現金"
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-aef03249-b98e-4667-a0f9-b83f2b989f9a\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-08e4a086-8624-4178-8b3b-755d7f5b0754\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -129,16 +128,30 @@
               "      <th>地點</th>\n",
               "      <th>支付方式</th>\n",
               "      <th>備註</th>\n",
+              "      <th></th>\n",
               "    </tr>\n",
               "  </thead>\n",
               "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>2026-03-11</td>\n",
+              "      <td>13:51</td>\n",
+              "      <td>午餐</td>\n",
+              "      <td>乾麵</td>\n",
+              "      <td>80</td>\n",
+              "      <td>承</td>\n",
+              "      <td></td>\n",
+              "      <td></td>\n",
+              "      <td></td>\n",
+              "      <td>現金</td>\n",
+              "    </tr>\n",
               "  </tbody>\n",
               "</table>\n",
               "</div>\n",
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-aef03249-b98e-4667-a0f9-b83f2b989f9a')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-08e4a086-8624-4178-8b3b-755d7f5b0754')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -190,12 +203,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-aef03249-b98e-4667-a0f9-b83f2b989f9a button.colab-df-convert');\n",
+              "        document.querySelector('#df-08e4a086-8624-4178-8b3b-755d7f5b0754 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-aef03249-b98e-4667-a0f9-b83f2b989f9a');\n",
+              "        const element = document.querySelector('#df-08e4a086-8624-4178-8b3b-755d7f5b0754');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -221,11 +234,11 @@
             "application/vnd.google.colaboratory.intrinsic+json": {
               "type": "dataframe",
               "variable_name": "df",
-              "repr_error": "Out of range float values are not JSON compliant: nan"
+              "summary": "{\n  \"name\": \"df\",\n  \"rows\": 1,\n  \"fields\": [\n    {\n      \"column\": \"\\u65e5\\u671f\",\n      \"properties\": {\n        \"dtype\": \"object\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"2026-03-11\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u6642\\u9593\",\n      \"properties\": {\n        \"dtype\": \"object\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"13:51\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u5206\\u985e\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\\u5348\\u9910\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u54c1\\u9805\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\\u4e7e\\u9eb5\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u91d1\\u984d\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"80\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u4ed8\\u6b3e\\u4eba\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\\u627f\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u5730\\u9ede\",\n      \"properties\": {\n        \"dtype\": \"object\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u652f\\u4ed8\\u65b9\\u5f0f\",\n      \"properties\": {\n        \"dtype\": \"object\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u5099\\u8a3b\",\n      \"properties\": {\n        \"dtype\": \"object\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\\u73fe\\u91d1\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
             }
           },
           "metadata": {},
-          "execution_count": 3
+          "execution_count": 17
         }
       ]
     },
@@ -237,7 +250,7 @@
       "metadata": {
         "id": "vyKKjojgZhNA"
       },
-      "execution_count": 4,
+      "execution_count": 18,
       "outputs": []
     },
     {
@@ -263,20 +276,20 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "MN3G7hp7ZWvz",
-        "outputId": "37f0475c-b305-4ad9-d318-3d5ab8a9f43a"
+        "outputId": "bb3d6bfa-ca64-417d-d5d5-c0d103491fa4"
       },
-      "execution_count": 6,
+      "execution_count": 19,
       "outputs": [
         {
           "name": "stdout",
           "output_type": "stream",
           "text": [
             "請輸入日期 (格式：YYYY-MM-DD): 2026-03-11\n",
-            "請輸入時間 (格式：HH:MM): 13:51\n",
-            "請輸入分類: 午餐\n",
-            "請輸入品項: 乾麵\n",
-            "請輸入金額: 80\n",
-            "請輸入付款人: 承\n",
+            "請輸入時間 (格式：HH:MM): 14:02\n",
+            "請輸入分類: 飲料\n",
+            "請輸入品項: 珍奶\n",
+            "請輸入金額: 70\n",
+            "請輸入付款人: 成\n",
             "請輸入付款方式: 現金\n"
           ]
         }
@@ -300,23 +313,10 @@
         "df = pd.concat([df, new_data], ignore_index=True)"
       ],
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "yySaXhktbXUM",
-        "outputId": "3b483cc1-bf4c-4f41-fded-705ab87e5301"
+        "id": "yySaXhktbXUM"
       },
-      "execution_count": 11,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stderr",
-          "text": [
-            "/tmp/ipykernel_747/2909155657.py:13: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.\n",
-            "  df = pd.concat([df, new_data], ignore_index=True)\n"
-          ]
-        }
-      ]
+      "execution_count": 20,
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -326,23 +326,24 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 89
+          "height": 112
         },
         "id": "jOyVO-dgbY16",
-        "outputId": "ebd28741-a7f2-448d-d3f5-b760d4996a1d"
+        "outputId": "775f844e-9ed2-46d8-e010-6690883ede7b"
       },
-      "execution_count": 12,
+      "execution_count": 21,
       "outputs": [
         {
           "output_type": "execute_result",
           "data": {
             "text/plain": [
-              "           日期     時間  分類  品項    金額 付款人   地點 支付方式   備註 付款方式\n",
-              "0  2026-03-11  13:51  午餐  乾麵  80.0   承  NaN  NaN  NaN   現金"
+              "           日期     時間  分類  品項    金額 付款人   地點 支付方式   備註      付款方式\n",
+              "0  2026-03-11  13:51  午餐  乾麵    80   承                  現金  NaN\n",
+              "1  2026-03-11  14:02  飲料  珍奶  70.0   成  NaN  NaN  NaN  NaN   現金"
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-6a387ba7-543b-4d37-b85f-49f7e7fef036\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-c5e0ff93-f9f4-438e-bfeb-3595f27144c6\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -370,6 +371,7 @@
               "      <th>地點</th>\n",
               "      <th>支付方式</th>\n",
               "      <th>備註</th>\n",
+              "      <th></th>\n",
               "      <th>付款方式</th>\n",
               "    </tr>\n",
               "  </thead>\n",
@@ -380,8 +382,23 @@
               "      <td>13:51</td>\n",
               "      <td>午餐</td>\n",
               "      <td>乾麵</td>\n",
-              "      <td>80.0</td>\n",
+              "      <td>80</td>\n",
               "      <td>承</td>\n",
+              "      <td></td>\n",
+              "      <td></td>\n",
+              "      <td></td>\n",
+              "      <td>現金</td>\n",
+              "      <td>NaN</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>2026-03-11</td>\n",
+              "      <td>14:02</td>\n",
+              "      <td>飲料</td>\n",
+              "      <td>珍奶</td>\n",
+              "      <td>70.0</td>\n",
+              "      <td>成</td>\n",
+              "      <td>NaN</td>\n",
               "      <td>NaN</td>\n",
               "      <td>NaN</td>\n",
               "      <td>NaN</td>\n",
@@ -393,7 +410,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-6a387ba7-543b-4d37-b85f-49f7e7fef036')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-c5e0ff93-f9f4-438e-bfeb-3595f27144c6')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -445,12 +462,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-6a387ba7-543b-4d37-b85f-49f7e7fef036 button.colab-df-convert');\n",
+              "        document.querySelector('#df-c5e0ff93-f9f4-438e-bfeb-3595f27144c6 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-6a387ba7-543b-4d37-b85f-49f7e7fef036');\n",
+              "        const element = document.querySelector('#df-c5e0ff93-f9f4-438e-bfeb-3595f27144c6');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -470,7 +487,7 @@
               "  </div>\n",
               "\n",
               "\n",
-              "  <div id=\"id_baad46f9-7bb2-4bbc-8479-bad96fbfb834\">\n",
+              "  <div id=\"id_e42457ee-b4ba-4845-b7ce-23777843901b\">\n",
               "    <style>\n",
               "      .colab-df-generate {\n",
               "        background-color: #E8F0FE;\n",
@@ -514,7 +531,7 @@
               "    <script>\n",
               "      (() => {\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#id_baad46f9-7bb2-4bbc-8479-bad96fbfb834 button.colab-df-generate');\n",
+              "        document.querySelector('#id_e42457ee-b4ba-4845-b7ce-23777843901b button.colab-df-generate');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
@@ -531,11 +548,11 @@
             "application/vnd.google.colaboratory.intrinsic+json": {
               "type": "dataframe",
               "variable_name": "df",
-              "repr_error": "Out of range float values are not JSON compliant: nan"
+              "summary": "{\n  \"name\": \"df\",\n  \"rows\": 2,\n  \"fields\": [\n    {\n      \"column\": \"\\u65e5\\u671f\",\n      \"properties\": {\n        \"dtype\": \"object\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"2026-03-11\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u6642\\u9593\",\n      \"properties\": {\n        \"dtype\": \"object\",\n        \"num_unique_values\": 2,\n        \"samples\": [\n          \"14:02\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u5206\\u985e\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 2,\n        \"samples\": [\n          \"\\u98f2\\u6599\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u54c1\\u9805\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 2,\n        \"samples\": [\n          \"\\u73cd\\u5976\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u91d1\\u984d\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 2,\n        \"samples\": [\n          70.0\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u4ed8\\u6b3e\\u4eba\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 2,\n        \"samples\": [\n          \"\\u6210\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u5730\\u9ede\",\n      \"properties\": {\n        \"dtype\": \"object\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u652f\\u4ed8\\u65b9\\u5f0f\",\n      \"properties\": {\n        \"dtype\": \"object\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u5099\\u8a3b\",\n      \"properties\": {\n        \"dtype\": \"object\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\\u73fe\\u91d1\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"\\u4ed8\\u6b3e\\u65b9\\u5f0f\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"\\u73fe\\u91d1\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
             }
           },
           "metadata": {},
-          "execution_count": 12
+          "execution_count": 21
         }
       ]
     },
@@ -561,9 +578,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "pBw3mmWzcJyA",
-        "outputId": "6d4b07b0-60b5-4221-c88b-cfee43782a2e"
+        "outputId": "239fd813-6c7c-4c39-e4a8-a0c12c3764d4"
       },
-      "execution_count": 14,
+      "execution_count": 22,
       "outputs": [
         {
           "output_type": "stream",
